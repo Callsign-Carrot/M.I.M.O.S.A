@@ -26,6 +26,8 @@ function addItem(event) {
       toggleAddForm();
     })
     .catch((error) => console.error(error));
+    loadItems();
+    location.reload();
 }
 
 // Delete item
